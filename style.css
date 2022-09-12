@@ -5,7 +5,12 @@
 }
 
 body{
-    background: black;
+    background: rgb(0, 0, 0);
+}
+
+a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -15,7 +20,7 @@ ul {
 .container-main{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 5px;
 }
 
 
@@ -26,7 +31,8 @@ ul {
 }
 
 .flex-container1 a:hover{
-    color: coral;
+    color: rgb(6, 72, 122);
+    opacity: 0.9;
 }
 
 .navbar ul{
@@ -34,28 +40,30 @@ ul {
 }
 
 .navbar ul li{
-    margin: 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+.nav a{
+    font-weight: bold;
 }
 
 .flex-container1{
     display: flex;
-    background-color: lightblue;
+    background-color: #3499FF;
     justify-content: space-between;
     align-items: center;
     
 }
 
 .logo{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    color: black ;
+    color: rgb(8, 3, 93) ;
     margin: 15px;
     padding: 1px;
     display: flex;
     justify-content: center;
 }
-
-
 
 .container{
     display: grid;
