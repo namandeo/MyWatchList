@@ -70,35 +70,39 @@ ul {
     margin-top: 30px;
     background-color: transparent;
     padding: 10px;
-    grid-template-rows: 30px 170px 30px 170px 30px 170px;
+    grid-template-rows: 30px 250px 30px 250px 30px 250px;
 }
 
 .item{
     background-color: transparent;
-    
     padding: 0px 10px;
     font-size: 25px;
     text-align: left;
-    color: cornsilk;
+    color: #cae962;
 }
 
 .bar{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 5px;
-    font-size: 30px;
-    text-align: center;
+    font-size: 0px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 5px;
 }
 
-.movies{
-    font-size: 1.5ch;
+.bar-item{
+    font-size: 20px;
     background-color: steelblue;
-    display: flex;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
     justify-content: center;
     align-items: center;
+    gap: 2px;
+}
+
+.bar-item .bar-item-text{
+    background-color: #3CB371;
 }
 
 .grid-container {
@@ -112,7 +116,7 @@ ul {
     padding: 20px;
     font-size: 10px;
     }
-img{
+.grid-item img{
     width: 100%;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
