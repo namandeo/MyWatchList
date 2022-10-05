@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-Show</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background: transparent;
+    }
+    .mySlides {display: none;}
+
+    .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    }
+    .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    }
+    .dot {
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 10s ease;
+    }
+
+    .active {
+    background-color: transparent;
+    }
+    @media only screen and (max-width: 100%) {
+    .text {font-size: 11px}
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 10px;
+    }
+    .grid-item {
+        background-color: transparent;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .mainpic{
+        width: 100%;
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+    .title{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #t{
+        font-size: 40;
+    }
+    #icons{
+        font-size: 15;
+    }
+    #info{
+        font-size: 15;
+    }
+    .btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+        background-color: #3CB371 !important;
+        border-radius: 25px;
+    }
+    .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+        border-radius: 25px;
+    }
+</style>
+<body>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="grid-container">
+            <div class="grid-item">
+                <br><br><span id="t" class="title">Attack on Titan</span>
+                <br>
+                <div id="icons"class="title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                  </svg> TV&nbsp;   
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg> 24 min</div>
+                  <br>
+                  <div class="title" id="info">
+                    Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter.
+                </div>
+                <br><img class="buttons" src="images/bs.JPG" alt="">
+            </div>
+            <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/aotl.jpg" alt=""></div>
+          </div>
+    </div>
+        <div class="mySlides fade">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <br><br><span id="t" class="title">Haikyuu!!</span>
+                    <br>
+                    <div id="icons"class="title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg> TV&nbsp;   
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg> 24 min</div>
+                      <br>
+                      <div class="title" id="info">
+                      Ever since having witnessed the "Little Giant" and his astonishing skills on the volleyball court, Shouyou Hinata has been bewitched by the dynamic nature of the sport. Even though his attempt to make his debut as a volleyball regular during a middle school tournament went up in flames, he longs to prove that his less-than-impressive height ceases to be a hindrance in the face of his sheer will and perseverance.
+                    </div>
+                    <br><img class="buttons" src="images/bs.JPG" alt="">
+                </div>
+                <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/hykl.jpg" alt=""></div>
+              </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <br><br><span id="t" class="title">Death Note</span>
+                    <br>
+                    <div id="icons"class="title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg> TV&nbsp;   
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg> 24 min</div>
+                      <br>
+                      <div class="title" id="info">
+                        Brutal murders, petty thefts, and senseless violence pollute the human world. In contrast, the realm of death gods is a humdrum, unchanging gambling den. The ingenious 17-year-old Japanese student Light Yagami and sadistic god of death Ryuk share one belief: their worlds are rotten.
+                    </div>
+                    <br><img class="buttons" src="images/bs.JPG" alt="">
+                </div>
+                <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/dnl.jpg" alt=""></div>
+              </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <br><br><span id="t" class="title">Hunter X Hunter</span>
+                    <br>
+                    <div id="icons"class="title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg> TV&nbsp;   
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg> 24 min</div>
+                      <br>
+                      <div class="title" id="info">
+                        Hunters devote themselves to accomplishing hazardous tasks, all from traversing the world's uncharted territories to locating rare items and monsters. Before becoming a Hunter, one must pass the Hunter Examination—a high-risk selection process in which most applicants end up handicapped or worse, deceased.
+                    </div>
+                    <br><img class="buttons" src="images/bs.JPG" alt="">
+                </div>
+                <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/hxhl.jpg" alt=""></div>
+              </div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <br><br><span id="t" class="title">Demon Slayer</span>
+                    <br>
+                    <div id="icons"class="title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg> TV&nbsp;   
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg> 24 min</div>
+                      <br>
+                      <div class="title" id="info">
+                        Ever since the death of his father, the burden of supporting the family has fallen upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain, the Kamado family are able to enjoy a relatively peaceful and happy life. One day, Tanjirou decides to go down to the local village to make a little money selling charcoal. 
+                    </div>
+                    <br><img class="buttons" src="images/bs.JPG" alt="">
+                </div>
+                <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/dsl.jpg" alt=""></div>
+              </div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <br><br><span id="t" class="title">Kaguya-sama: Love is War</span>
+                    <br>
+                    <div id="icons"class="title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg> TV&nbsp;   
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg> 24 min</div>
+                      <br>
+                      <div class="title" id="info">
+                        At the renowned Shuchiin Academy, Miyuki Shirogane and Kaguya Shinomiya are the student body's top representatives. Ranked the top student in the nation and respected by peers and mentors alike, Miyuki serves as the student council president. Alongside him, the vice president Kaguya—eldest daughter of the wealthy Shinomiya family—excels in every field imaginable. They are the envy of the entire student body, regarded as the perfect couple.
+                    </div>
+                    <br><img class="buttons" src="images/bs.JPG" alt="">
+                </div>
+                <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/liwl.png" alt=""></div>
+              </div>
+        </div>
+        
+        
+        <div class="mySlides fade">
+          <div class="grid-container">
+              <div class="grid-item">
+                  <br><br><span id="t" class="title">Dragon Ball Super</span>
+                  <br>
+                  <div id="icons"class="title">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg> TV&nbsp;   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                    </svg> 24 min</div>
+                    <br>
+                    <div class="title" id="info">
+                      Seven years after the events of Dragon Ball Z, Earth is at peace, and its people live free from any dangers lurking in the universe. However, this peace is short-lived; a sleeping evil awakens in the dark reaches of the galaxy: Beerus, the ruthless God of Destruction.
+                  </div>
+                  <br><img class="buttons" src="images/bs.JPG" alt="">
+              </div>
+              <div class="grid-item" style="display:block;margin:auto;"><img class="mainpic" src="images/dbsl.jpg" alt=""></div>
+            </div>
+      </div>
+      
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000);
+        }
+        </script>
+        
+</body>
+</html>
